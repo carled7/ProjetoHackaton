@@ -1,0 +1,18 @@
+.container{
+    background-color: red;
+    padding: 12px 20px;
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto;
+    cursor: pointer
+}
+.txt{
+    font-family: 'Roboto';
+    font-weight: 600
+}
+h1{
+    font-family: 'Roboto';
+    font-weight: 600
+}
+
+

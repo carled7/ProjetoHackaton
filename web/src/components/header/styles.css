@@ -5,10 +5,9 @@
 }
 
 .line{
-display: flex;
-width: 170vh;
-height: 0.01vh;
-border: 1px solid #025373;
+    display: flex;
+    width: 90%;
+    border: 0.5px solid #025373;
 }
 
 .header img{
