@@ -1,26 +1,50 @@
 import { Header } from './components/header/Header.jsx';
 import { Itens } from './components/tiposItens/Itens.jsx';
 import { Button } from './components/button/Button.jsx';
-
+import { useState } from 'react';
+import { Link } from "react-router-dom";
 import './style.css'
 
 function App() {
 
+
+
   return (
     <div className='containerGlobal'>
       <Header />
-      <h1>Tipo de atendimento:</h1>
-      <form className='listContainer'>
-        <Itens title="Fósforo" />
-        <Itens title="Gesso" />
-        <Itens title="Água" />
-        <Itens title="Produtos gerais" />
-        <Itens title="Leite" />
-        <Itens title="Potássio" />
 
+      <h1>Tipo de atendimento:</h1>
+      <form >
+        <div className='listContainer'> 
+          <div className="listTipos" >
+            <input type='radio' name="atend" />
+            <span>Fósforo</span>
+          </div>
+          <div className="listTipos" >
+            <input type='radio' name="atend" />
+            <span>Gesso</span>
+          </div>
+          <div className="listTipos" >
+            <input type='radio' name="atend" />
+            <span>Água</span>
+          </div>
+          <div className="listTipos" >
+            <input type='radio' name="atend" />
+            <span>Água</span>
+          </div>
+          <div className="listTipos" >
+            <input type='radio' name="atend" />
+            <span>Água</span>
+          </div>
+          <div className="listTipos" >
+            <input type='radio' name="atend" />
+            <span>Água</span>
+          </div>
+        </div>
+        <input type="submit" value="Próximo" className='containerBtn' />
       </form>
-        <Button title="Próximo" to="/password" color="#F2F2F2" bg="#025373" className="btn" />
-    </div>
+
+    </div >
   )
 }
 
